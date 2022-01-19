@@ -4,21 +4,31 @@
  */
 package charles_y7258218f;
 
-/**
- *
- * @author charlesramos
+/** EJERCICIO PRÁCTICO EXAMEN EVAL 1 ED
+ * 
+ * @author charlesramos y7258218f
+ *@version 1.0
  */
 public class CHARLES_Y7258218F {
-
+  
     static final double FACTOR_HORA_EXTRA = 1.2;
     private String nombreCompleto, dni;
     private double salarioBasePorHora = 10.56;
-
+    /**
+     * ◦ Constructor con tres parámetros
+     * @param nombreCompleto CHARLES RAMOS MONTILLA
+     * @param dni  Y7258218F
+     */
     public CHARLES_Y7258218F(String nombreCompleto, String dni) {
         this.nombreCompleto = nombreCompleto;
         this.dni = dni;
     }
-
+    /**
+     * ◦ Calcula el salario bruto mensual en función del salario base por hora y
+     *  El precio por hora de la hora extra se determina con la constante FACTOR_HORA_EXTRA
+     * @param horasExtra  número de horas extra dedicadas redondeado a la baja (entero)
+     * @return  devuelve el salario bruto mensual en euros con dos decimales
+     */
     public double getSalarioEsteMes(int horasExtra) {
         double cantidadExtra, salarioFinal;
         cantidadExtra = horasExtra * this.salarioBasePorHora
